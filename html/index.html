@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유명사 견적</title>
+    <style>
+        table, td {
+          border: 1px solid black;
+        }
+        </style>
+</head>
+<body>
+
+  
+<p>lasermarket11@gmail.com</p>
+<p>국민 512001-04-444197</p>
+<p>3.2T 이상 절곡 요청시, 최소 외장길이 10cm 이상만 가능</p>
+<p>최대 크기 1219*2438mm 이하</p>
+<p>1cm 10mm</p>
+<p>10cm 100mm</p>
+
+<button type="button" onclick="myFunction()">열 추가</button>
+
+<table id="myTable">
+    <thead>
+    <tr>
+        <td>재질</td>
+        <td>두께</td>
+        <td width="50">가로</td>
+        <td width="50">세로</td>
+        <td  width="50">수량</td>
+        <td width="50">가로</td>
+        <td width="50">세로</td>
+        <td width="50">판재금액</td>
+        <td width="50">재단비</td>
+        <td width="50">판재+재단비</td>
+        <td width="50">네이버 주문수량</td>
+      </tr>
+  
+    </thead>
+</table>
+<br>
+
+<script>
+
+myFunction();
+myFunction();
+myFunction();
+myFunction();
+myFunction();
+myFunction();
+myFunction();
+
+
+function myFunction() {
+  var table = document.getElementById("myTable");
+  var rowCount = table.rows.length;
+var row = table.insertRow(rowCount);
+  var row = table.insertRow(-1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  var cell4 = row.insertCell(3);
+  var cell5 = row.insertCell(4);
+
+    cell1.innerHTML  = "<select> "+
+        "<option value='volvo'>일반철판 \n SS400계열 \n자석 O</option>"+
+        "<option value='volvo'>고장력강\n아토스\nATOS80\n(ATOS780)</option>"+
+        "<option value='volvo'>탄소강\nS45C</option>"+
+        "<option value='volvo'>SUS-1D\n자석 X</option>"+
+        "<option value='volvo'>SUS-2B\n일반스텐\n스크래치有</option>"+
+        "<option value='volvo'>SUS-HL</option>"+
+        "<option value='volvo'>SUS-PL</option>"+
+        "<option value='volvo'>AL</option>"+
+        "<option value='volvo'>AL-CK</option>"+
+        "</select>"; 
+  cell2.innerHTML  = '<input type="number"  width="50" min="0" step="1"/>';
+  cell3.innerHTML  = '<input type="number"  width="50" min="0" step="1"/>';
+  cell4.innerHTML  = '<input type="number"  width="50" min="0" step="1"/>';
+  cell5.innerHTML  = '<input type="number"  width="50" min="0" step="1"/>';
+
+}
+</script>
+</body>
+</html>
